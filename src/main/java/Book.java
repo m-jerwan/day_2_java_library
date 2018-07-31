@@ -1,4 +1,13 @@
-public class Book {
+
+    public class Book {
+        private String bookName;
 
 
-}
+        public Book(String bookName) {
+            this.bookName = bookName;
+        }
+
+
+
+
+    }
