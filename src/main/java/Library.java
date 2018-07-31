@@ -8,7 +8,7 @@ public class Library {
     private ArrayList<Book> collection;
     private int capacity;
 
-//INIT
+    //INIT
     public Library(String address){
         this.collection = new ArrayList<Book>();
         this.address = address;
@@ -16,7 +16,7 @@ public class Library {
     }
 
 
-//METHODS
+    // METHODS
 
     public int capacity(){
         return this.capacity;

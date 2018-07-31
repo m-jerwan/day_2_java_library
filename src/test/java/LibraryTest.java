@@ -1,3 +1,4 @@
+import com.sun.deploy.security.MozillaMyKeyStore;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,8 +14,8 @@ public class LibraryTest {
     @Before
     public void before(){
         library_01 = new Library("Leith");
-        book_01 = new Book("The Element");
-        book_02 = new Book("Quo Vadis");
+        book_01 = new Book("The Element", GenreType.MYSTERY);
+        book_02 = new Book("Quo Vadis", GenreType.THRILLER);
     }
 
     @Test
@@ -43,6 +44,11 @@ public class LibraryTest {
     @Test
     public void checkCapacity(){
         assertEquals(1, library_01.capacity());
+    }
+
+    @Test
+    public void checkGenre(){
+        assertEquals("Thriller", book_02);
     }
 
 }

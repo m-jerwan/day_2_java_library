@@ -9,5 +9,16 @@ public class Borrower {
         this.booksBorrowed = new ArrayList<Book>();
     }
 
+    public String name(){
+        return this.name;
+    }
+    public int bookCount(){
+        return this.booksBorrowed.size();
+    }
+
+    public void borrowBook(Book book, Library library){
+//        Book bookIWant = library.removeBook(Book book); - KAPUT
+        this.booksBorrowed.add(book);
+    }
 
 }
