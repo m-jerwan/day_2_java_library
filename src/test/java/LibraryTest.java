@@ -1,10 +1,11 @@
-import com.sun.deploy.security.MozillaMyKeyStore;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
 //====================================================
+
 
 public class LibraryTest {
     Library library_01;
@@ -48,7 +49,7 @@ public class LibraryTest {
 
     @Test
     public void checkGenre(){
-        assertEquals("Thriller", book_02);
+        assertEquals("THRILLER", book_02.checkGenre());
     }
 
 }

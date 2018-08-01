@@ -17,8 +17,9 @@ public class Borrower {
     }
 
     public void borrowBook(Book book, Library library){
-//        Book bookIWant = library.removeBook(Book book); - KAPUT
+        library.removeBook(book);
         this.booksBorrowed.add(book);
     }
 
 }
+ 
